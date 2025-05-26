@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: marketbidder-api
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
+    region: oregon
